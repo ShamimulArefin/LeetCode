@@ -1,4 +1,4 @@
-s = "2652. Sum Multiples"
+s = "1046. Last Stone Weight"
 s = s.replace(".", "").replace(" ", "_")
 
 fp = open(s + '.py', 'x')
