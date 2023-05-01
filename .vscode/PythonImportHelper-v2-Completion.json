@@ -1,0 +1,191 @@
+[
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "0-problemName",
+        "description": "0-problemName",
+        "peekOfCode": "s = \"\"\ns = s.replace(\".\", \"\").replace(\" \", \"_\")\nfp = open(s + '.py', 'x')\nfp.close()",
+        "detail": "0-problemName",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "0-problemName",
+        "description": "0-problemName",
+        "peekOfCode": "s = s.replace(\".\", \"\").replace(\" \", \"_\")\nfp = open(s + '.py', 'x')\nfp.close()",
+        "detail": "0-problemName",
+        "documentation": {}
+    },
+    {
+        "label": "fp",
+        "kind": 5,
+        "importPath": "0-problemName",
+        "description": "0-problemName",
+        "peekOfCode": "fp = open(s + '.py', 'x')\nfp.close()",
+        "detail": "0-problemName",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "1046_Last_Stone_Weight",
+        "description": "1046_Last_Stone_Weight",
+        "peekOfCode": "class Solution:\n    def lastStoneWeight(self, stones: List[int]) -> int:\n        while True:\n            if len(stones)==1:\n                break\n            elif len(stones)==2:\n                if stones[0]==stones[1]:\n                    stones[0] = 0\n                    break\n                else:",
+        "detail": "1046_Last_Stone_Weight",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "1491_Average_Salary_Excluding_the_Minimum_and_Maximum_Salary",
+        "description": "1491_Average_Salary_Excluding_the_Minimum_and_Maximum_Salary",
+        "peekOfCode": "class Solution:\n    def average(self, salary: List[int]) -> float:\n        return (sum(salary) - max(salary) - min(salary))/(len(salary)-2)\n\"\"\"\nway 2\nTime O(nlogn)\nSpace O(1)\n\"\"\"\nclass Solution:\n    def average(self, salary: List[int]) -> float:",
+        "detail": "1491_Average_Salary_Excluding_the_Minimum_and_Maximum_Salary",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "1491_Average_Salary_Excluding_the_Minimum_and_Maximum_Salary",
+        "description": "1491_Average_Salary_Excluding_the_Minimum_and_Maximum_Salary",
+        "peekOfCode": "class Solution:\n    def average(self, salary: List[int]) -> float:\n        salary.remove(max(salary))\n        salary.remove(min(salary))\n        return sum(salary)/len(salary)",
+        "detail": "1491_Average_Salary_Excluding_the_Minimum_and_Maximum_Salary",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "1768_Merge_Strings_Alternately",
+        "description": "1768_Merge_Strings_Alternately",
+        "peekOfCode": "class Solution:\n    def mergeAlternately(self, word1: str, word2: str) -> str:\n        res = \"\"\n        for i in range(min(len(word1),len(word2))):\n            res += word1[i]+word2[i]\n        return res+word1[i+1:]+word2[i+1:]\n# another way\nclass Solution:\n    def mergeAlternately(self, word1: str, word2: str) -> str:\n        s = \"\"",
+        "detail": "1768_Merge_Strings_Alternately",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "1768_Merge_Strings_Alternately",
+        "description": "1768_Merge_Strings_Alternately",
+        "peekOfCode": "class Solution:\n    def mergeAlternately(self, word1: str, word2: str) -> str:\n        s = \"\"\n        res = \"\"\n        if len(word1)<len(word2):\n            for i in range(len(word1)):\n                s += word1[i]+word2[i]\n            res = s+word2[len(word1):]\n        elif len(word1)>len(word2):\n            for i in range(len(word2)):",
+        "detail": "1768_Merge_Strings_Alternately",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "1_Two_Sum",
+        "description": "1_Two_Sum",
+        "peekOfCode": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        lst = []\n        for i in range(len(nums)):\n                for j in range(i+1, len(nums)):\n                        if nums[i]+nums[j]==target:\n                                lst.append([i, j])\n        return lst[-1]\n# way 2\nclass Solution:",
+        "detail": "1_Two_Sum",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "1_Two_Sum",
+        "description": "1_Two_Sum",
+        "peekOfCode": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        lookup = {}\n        for i, num in enumerate(nums):\n            if target - num in lookup:\n                return [lookup[target - num], i ]\n            lookup[num] = i\n# way 3\nclass Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:",
+        "detail": "1_Two_Sum",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "1_Two_Sum",
+        "description": "1_Two_Sum",
+        "peekOfCode": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n                for j in range(i+1, len(nums)):\n                        if nums[i]+nums[j]==target:\n                                return [i, j]\n# way 4 in C++\nclass Solution {\npublic:\n    vector<int> twoSum(vector<int>& nums, int target) {",
+        "detail": "1_Two_Sum",
+        "documentation": {}
+    },
+    {
+        "label": "Solutio",
+        "kind": 6,
+        "importPath": "1_Two_Sum",
+        "description": "1_Two_Sum",
+        "peekOfCode": "class Solution {\npublic:\n    vector<int> twoSum(vector<int>& nums, int target) {\n        int sz = nums.size();\n            for(int i=0; i<sz-1; i++)\n            {\n                    for(int j=i+1; j<sz; j++)\n                    {\n                            if(nums[i]+nums[j] == target)\n                            {",
+        "detail": "1_Two_Sum",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "258_Add_Digits",
+        "description": "258_Add_Digits",
+        "peekOfCode": "class Solution:\n    def addDigits(self, num: int) -> int:\n        if num == 0:\n            return 0\n        if num % 9 == 0:\n            return 9\n        return num % 9\n# way 2\nclass Solution:\n    def addDigits(self, num: int) -> int:",
+        "detail": "258_Add_Digits",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "258_Add_Digits",
+        "description": "258_Add_Digits",
+        "peekOfCode": "class Solution:\n    def addDigits(self, num: int) -> int:\n        return 1 + (num - 1) % 9 if num else 0",
+        "detail": "258_Add_Digits",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "2651_Calculate_Delayed_Arrival_Time",
+        "description": "2651_Calculate_Delayed_Arrival_Time",
+        "peekOfCode": "class Solution:\n    def findDelayedArrivalTime(self, arrivalTime: int, delayedTime: int) -> int:\n        time = arrivalTime + delayedTime\n        if time>=24:\n            return time-24\n        else:\n            return time\n# way 2\nclass Solution:\n    def findDelayedArrivalTime(self, arrivalTime: int, delayedTime: int) -> int:",
+        "detail": "2651_Calculate_Delayed_Arrival_Time",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "2651_Calculate_Delayed_Arrival_Time",
+        "description": "2651_Calculate_Delayed_Arrival_Time",
+        "peekOfCode": "class Solution:\n    def findDelayedArrivalTime(self, arrivalTime: int, delayedTime: int) -> int:\n        return (arrivalTime + delayedTime) % 24",
+        "detail": "2651_Calculate_Delayed_Arrival_Time",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "2652_Sum_Multiples",
+        "description": "2652_Sum_Multiples",
+        "peekOfCode": "class Solution:\n    def sumOfMultiples(self, n: int) -> int:\n        sum = 0\n        for i in range(1, n+1):\n            if i%3==0 or i%5==0 or i%7==0:\n                sum += i\n        return sum",
+        "detail": "2652_Sum_Multiples",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "319_Bulb_Switcher",
+        "description": "319_Bulb_Switcher",
+        "peekOfCode": "class Solution:\n    def bulbSwitch(self, n: int) -> int:\n        return int(sqrt(n))",
+        "detail": "319_Bulb_Switcher",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "69_Sqrt(x)",
+        "description": "69_Sqrt(x)",
+        "peekOfCode": "class Solution:\n    def mySqrt(self, x: int) -> int:\n        n = 1\n        while n*n<=x:\n            n+=1\n        return n-1\n# way 2 binary search\nclass Solution:\n    def mySqrt(self, x: int) -> int:\n        left, right = 0, x",
+        "detail": "69_Sqrt(x)",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "69_Sqrt(x)",
+        "description": "69_Sqrt(x)",
+        "peekOfCode": "class Solution:\n    def mySqrt(self, x: int) -> int:\n        left, right = 0, x\n        while right>=left:\n            mid = (left + right)//2\n            if mid*mid<=x:\n                left = mid+1\n            else:\n                right = mid-1   \n        return right",
+        "detail": "69_Sqrt(x)",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "70_Climbing_Stairs",
+        "description": "70_Climbing_Stairs",
+        "peekOfCode": "class Solution:\n    def climbStairs(self, n: int) -> int:\n        if n<=2:\n            return n\n        x, y = 1, 2\n        for i in range(2,n):\n            step = x\n            x = y\n            y = step+y\n        return y",
+        "detail": "70_Climbing_Stairs",
+        "documentation": {}
+    }
+]
