@@ -74,6 +74,24 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "1822_Sign_of_the_Product_of_an_Array",
+        "description": "1822_Sign_of_the_Product_of_an_Array",
+        "peekOfCode": "class Solution:\n    def arraySign(self, nums: List[int]) -> int:\n        def signFunc(product):\n            if product>0:\n                return 1\n            elif product<0:\n                return -1\n            else:\n                return 0\n        product = 1",
+        "detail": "1822_Sign_of_the_Product_of_an_Array",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "1822_Sign_of_the_Product_of_an_Array",
+        "description": "1822_Sign_of_the_Product_of_an_Array",
+        "peekOfCode": "class Solution:\n    def arraySign(self, nums: List[int]) -> int:\n        m = 1\n        for i in nums:\n            m *= i\n        if m>0:\n            return 1\n        elif m<0:\n            return -1\n        else:",
+        "detail": "1822_Sign_of_the_Product_of_an_Array",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "1_Two_Sum",
         "description": "1_Two_Sum",
         "peekOfCode": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        lst = []\n        for i in range(len(nums)):\n                for j in range(i+1, len(nums)):\n                        if nums[i]+nums[j]==target:\n                                lst.append([i, j])\n        return lst[-1]\n# way 2\nclass Solution:",
