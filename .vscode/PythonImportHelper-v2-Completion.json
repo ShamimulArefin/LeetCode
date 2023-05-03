@@ -128,6 +128,15 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "2215_Find_the_Difference_of_Two_Arrays",
+        "description": "2215_Find_the_Difference_of_Two_Arrays",
+        "peekOfCode": "class Solution:\n    def findDifference(self, nums1: List[int], nums2: List[int]) -> List[List[int]]:\n        nums1, nums2 = set(nums1), set(nums2)\n        answer = []\n        answer.append(nums1.difference(nums2))\n        answer.append(nums2.difference(nums1))\n        return answer\n\"\"\"\nComplexity Analysis\nThe time complexity of the given solution is O(n), where n is the size of the larger input array since the set conversion takes O(n) time complexity, and set difference operation takes constant time complexity. ",
+        "detail": "2215_Find_the_Difference_of_Two_Arrays",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "258_Add_Digits",
         "description": "258_Add_Digits",
         "peekOfCode": "class Solution:\n    def addDigits(self, num: int) -> int:\n        if num == 0:\n            return 0\n        if num % 9 == 0:\n            return 9\n        return num % 9\n# way 2\nclass Solution:\n    def addDigits(self, num: int) -> int:",
