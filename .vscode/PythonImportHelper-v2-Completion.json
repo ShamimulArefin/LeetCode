@@ -191,6 +191,15 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "649_Dota2_Senate",
+        "description": "649_Dota2_Senate",
+        "peekOfCode": "class Solution:\n    def predictPartyVictory(self, senate: str) -> str:\n        r, d = [], []   \n        for i in range(len(senate)):\n            if senate[i] == 'R':\n                r.append(i)\n            else:\n                d.append(i)\n        i, st = len(senate)+1, ''\n        while True:",
+        "detail": "649_Dota2_Senate",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "69_Sqrt(x)",
         "description": "69_Sqrt(x)",
         "peekOfCode": "class Solution:\n    def mySqrt(self, x: int) -> int:\n        n = 1\n        while n*n<=x:\n            n+=1\n        return n-1\n# way 2 binary search\nclass Solution:\n    def mySqrt(self, x: int) -> int:\n        left, right = 0, x",
