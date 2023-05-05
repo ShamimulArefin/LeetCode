@@ -38,6 +38,15 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "1456_Maximum_Number_of_Vowels_in_a_Substring_of_Given_Length",
+        "description": "1456_Maximum_Number_of_Vowels_in_a_Substring_of_Given_Length",
+        "peekOfCode": "class Solution:\n    def maxVowels(self, s: str, k: int) -> int:\n        vowels = {'a', 'e', 'i', 'o', 'u'}\n        # Build the window of size k, count the number of vowels it contains.\n        count = 0\n        for i in range(k):\n            count += int(s[i] in vowels)\n        answer = count\n        # Slide the window to the right, focus on the added character and the\n        # removed character and update \"count\". Record the largest \"count\".",
+        "detail": "1456_Maximum_Number_of_Vowels_in_a_Substring_of_Given_Length",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "1491_Average_Salary_Excluding_the_Minimum_and_Maximum_Salary",
         "description": "1491_Average_Salary_Excluding_the_Minimum_and_Maximum_Salary",
         "peekOfCode": "class Solution:\n    def average(self, salary: List[int]) -> float:\n        return (sum(salary) - max(salary) - min(salary))/(len(salary)-2)\n\"\"\"\nway 2\nTime O(nlogn)\nSpace O(1)\n\"\"\"\nclass Solution:\n    def average(self, salary: List[int]) -> float:",
